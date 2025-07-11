@@ -5,5 +5,8 @@ const UserSchema = new Schema({
     firstName: {type: String},
     lastName: {type: String},
     password: {type: String},
-    
-})
+
+},{timestamps: true})
+
+const Users = mongoose.model("Users", UserSchema);
+module.exports = Users;
